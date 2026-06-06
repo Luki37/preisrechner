@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--tablet-color);
+  --color-price: rgb(47, 181, 221);
+  --color-reset: rgb(247, 33, 33);
+  --color-local: rgb(53, 187, 53);
+  --color-deliver: rgb(6, 6, 143);
+  --color-control: white;
+  --box-color: white;
+  --tablet-color: rgb(216, 219, 219);
+  --hover-color: rgb(209, 209, 208);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2vw;
+  gap: 2vw;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-color);
+  width: 65vw;
+  height: calc(100vh - 4vw);
+  border-radius: 1rem;
+}
+
+h1 {
+  padding: 2rem 0 0 2rem;
+  margin: 0;
+}
+
+.tablet {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--tablet-color);
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+.product {
+}
+
+.price {
+  color: var(--color-price);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+hr {
+  width: calc(65vw - 4rem);
+  color: var(--tablet-color);
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.sum {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+#total {
+  color: var(--color-price);
+  font-size: 2rem;
+}
+
+.control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "reset reset"
+    "local deliver";
+  gap: 0.5em;
+}
+
+.control-btn {
+  color: var(--color-control);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+#reset {
+  background-color: var(--color-reset);
+  grid-area: reset;
+}
+
+#reset:hover,
+#local:hover,
+#deliver:hover {
+  filter: brightness(1.5);
+}
+
+#local {
+  background-color: var(--color-local);
+  grid-area: local;
+}
+
+#deliver {
+  background-color: var(--color-deliver);
+  grid-area: deliver;
+}
+
+.order {
+  background-color: var(--box-color);
+  width: 29vw;
+  height: calc(100vh - 4vw);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+}
