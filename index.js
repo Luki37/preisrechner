@@ -9,11 +9,17 @@ function add(product, price) {
   console.log(product, price);
   total += price;
   console.log(total);
+  const orderList = document.getElementById("order-list");
+  const addProduct = document.createElement("li");
+  addProduct.textContent = `${product}: ${price.toFixed(2)} CHF`;
+  orderList.appendChild(addProduct);
   totalAnzeigen();
 }
 
 function reset() {
   total = 0;
+  const orderList = document.getElementById("order-list");
+  orderList.textContent = "";
   console.log(total);
   totalAnzeigen();
 }
