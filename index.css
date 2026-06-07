@@ -15,7 +15,6 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   padding: 2vw;
   gap: 2vw;
 }

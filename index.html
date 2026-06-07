@@ -12,70 +12,54 @@
       <div class="calculator">
         <h1>Preisrechner</h1>
         <div class="tablet">
-          <button class="btn" id="button1">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button2">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button3">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button4">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button5">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button6">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button7">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button8">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button9">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button10">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button11">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button12">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button13">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button14">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button15">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            ></button
-          ><button class="btn" id="button16">
-            <span class="product"></span>Produkt<span class="price"
-              >0.00 CHF</span
-            >
+          <button onclick="add('Pizza', 12.0)" class="btn" id="btn1">
+            <span class="product">Pizza</span><span class="price">12.00</span
+            ><span> CHF</span></button
+          ><button onclick="add('Cola', 7.0)" class="btn" id="btn2">
+            <span class="product">Cola</span><span class="price">7.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn3">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn4">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn5">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn6">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn7">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn8">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn9">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn10">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn11">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn12">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn13">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn14">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn15">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span></button
+          ><button onclick="add()" class="btn" id="btn16">
+            <span class="product">Produkt</span><span class="price">0.00</span
+            ><span> CHF</span>
           </button>
         </div>
         <hr />
@@ -86,11 +70,11 @@
           </div>
 
           <div class="control">
-            <button class="control-btn" id="reset" onclick="reset">
+            <button class="control-btn" id="reset" onclick="reset()">
               Zurücksetzen</button
-            ><button class="control-btn" id="local" onclick="local">
+            ><button class="control-btn" id="local" onclick="local()">
               Vor Ort</button
-            ><button class="control-btn" id="deliver" onclick="deliver">
+            ><button class="control-btn" id="deliver" onclick="deliver()">
               Lieferung
             </button>
           </div>
