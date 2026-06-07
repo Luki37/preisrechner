@@ -17,3 +17,28 @@ function reset() {
   console.log(total);
   totalAnzeigen();
 }
+
+function local() {
+  if (total === 0) {
+    alert("Bitte zuerst Artikel zur Bestellung hinzufügen.");
+  } else
+    alert("Bestellung vor Ort abgeschlossen, Gesamtbetrag: " + total + " CHF");
+  reset();
+}
+
+function deliver() {
+  if (total > 20) {
+    var totalDelivery = Number(total) + 2.5;
+    alert(
+      "Bestellung für Lieferung abgeschlossen, Gesamtbetrag: " +
+        totalDelivery +
+        " CHF",
+    );
+    reset();
+  } else
+    alert(
+      "Mindestbestellwert für Lieferung: 20 CHF. Aktueller Betrag: " +
+        total +
+        " CHF",
+    );
+}
