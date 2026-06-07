@@ -33,7 +33,12 @@ function local() {
 }
 
 function deliver() {
-  if (total > 20) {
+  if (total > 55) {
+    alert(
+      "Bestellung für Lieferung abgeschlossen, Gesamtbetrag: " + total + " CHF",
+    );
+    reset();
+  } else if (total > 20 && total < 55) {
     var totalDelivery = Number(total) + 2.5;
     alert(
       "Bestellung für Lieferung abgeschlossen, Gesamtbetrag: " +
