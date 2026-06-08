@@ -1,7 +1,7 @@
-var total = 0;
+let total = 0;
 
 function totalAnzeigen() {
-  var element = document.getElementById("total");
+  const element = document.getElementById("total");
   element.innerHTML = total + " CHF";
 }
 
@@ -39,7 +39,7 @@ function deliver() {
     );
     reset();
   } else if (total > 20 && total < 55) {
-    var totalDelivery = Number(total) + 2.5;
+    const totalDelivery = Number(total) + 2.5;
     alert(
       "Bestellung für Lieferung abgeschlossen, Gesamtbetrag: " +
         totalDelivery +
